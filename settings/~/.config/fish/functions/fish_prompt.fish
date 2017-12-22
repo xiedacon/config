@@ -1,0 +1,1 @@
+/home/xiedacon/.config/fisherman/clearance/fish_prompt.fish

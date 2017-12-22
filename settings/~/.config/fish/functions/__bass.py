@@ -1,0 +1,1 @@
+/home/xiedacon/.config/fisherman/bass/functions/__bass.py

@@ -1,0 +1,22 @@
+# Rime dictionary
+# encoding: utf-8
+
+---
+name: luna_pinyin_simp.extended
+version: "2017.08.16"
+sort: by_weight
+use_preset_vocabulary: true
+#此處爲明月拼音擴充詞庫（基本）默認鏈接載入的詞庫，有朙月拼音官方詞庫、明月拼音擴充詞庫（漢語大詞典）、明月拼音擴充詞庫（詩詞）、明月拼音擴充詞庫（含西文的詞彙）。如果不需要加載某个詞庫請將其用「#」註釋掉。
+import_tables:
+  - luna_pinyin          # 系统自带词库，无意外必须开启。
+
+  # 来源 搜狗细胞词库
+  # - c_computer           # 计算机词汇
+  # - c/c_botany             # 植物学词汇
+  # - c/c_chemistry          # 化学化工词汇
+  # - c/c_medicine           # 中西医词汇
+  # - c/c_shijing_all        # 诗经全文
+  # - c/c_finance            # 金融词汇
+  # - c/c_stock              # 股票基金词汇
+
+...

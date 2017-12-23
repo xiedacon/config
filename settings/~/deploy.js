@@ -14,6 +14,8 @@ function symlinkAll (rootPath, linkRootPath) {
 
     let linkPath = resolve(linkRootPath, file)
     if (fs.existsSync(linkPath)) {
+      if (fs.realpathSync(linkPath) === path) return
+
       if (fs.statSync(path).isDirectory()) return symlinkAll(path, linkPath)
       else fs.unlinkSync(linkPath)
     }

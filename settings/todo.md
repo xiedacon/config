@@ -5,6 +5,11 @@
 * ~/.local/bin
   * generate/small-server 软链接
 * ~/.bin
+* ~/Document => ~/e/document
+* ~/Downloads => ~/e/downloads
+* ~/Music => ~/e/music
+* ~/Pictures => ~/e/picture
+* ~/Videos => ~/e/video
 
 # 软件
 

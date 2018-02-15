@@ -1,6 +1,7 @@
 #!/bin/sh
 #
 # Dependence: xdotool, gnome-terminal ( 可替换 )
+# TODO: node 重写
 
 # 为初次运行初始化记录文件
 if [ ! -e /tmp/terminal ]; then

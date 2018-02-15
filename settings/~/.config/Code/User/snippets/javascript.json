@@ -15,7 +15,7 @@
 	},
 */
 	"use strict": {
-		"prefix": "us",
+		"prefix": "use",
 		"body": "'use strict'"
 	},
 	"let":{

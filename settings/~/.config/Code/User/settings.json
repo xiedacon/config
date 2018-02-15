@@ -20,7 +20,15 @@
   "debug.allowBreakpointsEverywhere": true,
   "debug.internalConsoleOptions": "neverOpen",
   "launch": {
-    
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "index",
+        "request": "launch",
+        "name": "node",
+        "program": "${workspaceFolder}/index.js"
+      }
+    ]
   },
 
   "explorer.openEditors.visible": 0,
@@ -137,10 +145,6 @@
   // eslint
   "eslint.enable": false,
 
-  // rest-client
-  "rest-client.showResponseInDifferentTab": true,
-  "rest-client.rememberCookiesForSubsequentRequests": true,
-
   // code-runner
   "code-runner.defaultLanguage": "javascript",
   "code-runner.runInTerminal": false,
@@ -148,8 +152,10 @@
 
   // gitlens
   "gitlens.blame.ignoreWhitespace": true,
-  "gitlens.blame.line.enabled": false,
+  "gitlens.currentLine.enabled": false,
   "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.dateFormat": "YYYY-MM-DD HH:mm",
+  "gitlens.statusBar.format": "${author}, ${date}  |  ${id}, ${message}",
   "gitlens.statusBar.alignment": "left",
   "gitlens.gitExplorer.files.layout": "tree",
 
@@ -164,7 +170,9 @@
     "suppressGitVersionWarning": false,
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
-    "suppressUpdateNotice": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressUpdateNotice": true,
     "suppressWelcomeNotice": true
-  }
+  },
+  "editor.accessibilitySupport": "off"
 }

@@ -13,6 +13,10 @@
 
 # 软件
 
+> 钥匙环
+>
+> add-apt-repository ppa:git-core/ppa ppa:philip.scott/elementary-tweaks
+
 |||
 |--|--|
 |编程|node, git, nginx, docker(mysql, redis, mongodb 服务端), cli/docker(mysql, redis, mongodb 客户端), vscode, smartgit, nvm|
@@ -21,11 +25,13 @@
 |翻墙|shadowsocks-qt5|
 |工具|shutter, GParted, etcher|
 |下载|aria2, wget, BaiduExporter(百度云)|
-||chrome, rime, vlc?, teamviewer?, gnome-terminal, gimp, hyper|
+||chrome, rime, vlc?, teamviewer?, gimp, pantheon-terminal|
 
 > 字典、剪切板工具、图片、文档、ssh记录
 
-> apt 钥匙环
+## 需要特殊版本
+
+* pantheon-terminal => https://github.com/xiedacon/terminal
 
 ## vscode 插件
 
@@ -42,3 +48,23 @@
 * output colorizer
 * path autocomplete
 * vscode great icons
+
+# 美化
+
+* Elementary Tweak
+* ~/.local/share/icons/la-capitaine-icon-theme => https://github.com/keeferrourke/la-capitaine-icon-theme.git
+
+# 快捷键
+
+|按键|功能|
+|--|--|s
+|win + ↑|最大化切换|
+|ctrl + win + ←|左半屏|
+|ctrl + win + →|右半屏|
+|win + s|切换工作区/窗口|
+|win + ←|左工作区|
+|win + →|右工作区|
+|alt + f3|toggle 终端|
+|ctrl + alt + p|shutter|
+|ctrl + alt + t|pantheon-terminal|
+|ctrl + alt + b|浏览器|

@@ -15,7 +15,9 @@
 
 > 钥匙环
 >
-> add-apt-repository ppa:git-core/ppa ppa:philip.scott/elementary-tweaks
+> add-apt-repository ppa:git-core/ppa 
+> add-apt-repository ppa:philip.scott/elementary-tweaks
+> add-apt-repository ppa:diodon-team/stable
 
 |||
 |--|--|
@@ -23,11 +25,11 @@
 |shell|fish|
 |系统工具|htop, dconf|
 |翻墙|shadowsocks-qt5|
-|工具|shutter, GParted, etcher|
+|工具|shutter, GParted, etcher, speedcrunch, peek, diodon|
 |下载|aria2, wget, BaiduExporter(百度云)|
-||chrome, rime, vlc?, teamviewer?, gimp, pantheon-terminal|
+||chrome, sogoupinyin, vlc?, teamviewer?, gimp, pantheon-terminal, notepadqq|
 
-> 字典、剪切板工具、图片、文档、ssh记录
+> 字典、图片、ssh记录
 
 ## 需要特殊版本
 
@@ -57,7 +59,7 @@
 # 快捷键
 
 |按键|功能|
-|--|--|s
+|--|--|
 |win + ↑|最大化切换|
 |ctrl + win + ←|左半屏|
 |ctrl + win + →|右半屏|
@@ -68,3 +70,4 @@
 |ctrl + alt + p|shutter|
 |ctrl + alt + t|pantheon-terminal|
 |ctrl + alt + b|浏览器|
+|ctrl + ;|剪切板|

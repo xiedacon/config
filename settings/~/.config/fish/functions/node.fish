@@ -1,1 +1,0 @@
-/home/xiedacon/.config/fisherman/nvm/node.fish

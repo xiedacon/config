@@ -290,11 +290,44 @@
     "command": "workbench.action.terminal.focusFindWidget",
     "when": "terminalFocus"
   },
+  {
+    "key": "alt+up",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+down",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+/",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+tab",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+shift+tab",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  // 
+  // 
+
   // 弹出面板循环
   {
     "key": "alt+right",
-    "command": "workbench.debug.action.focusRepl",
+    "command": "workbench.action.problems.focus",
     "when": "terminalFocus"
+  },
+  {
+    "key": "alt+right",
+    "command": "workbench.debug.action.focusRepl",
+    "when": "problemFocus"
   },
   {
     "key": "alt+right",
@@ -308,8 +341,13 @@
   },
   {
     "key": "alt+left",
-    "command": "workbench.action.terminal.focus",
+    "command": "workbench.action.problems.focus",
     "when": "inDebugRepl"
+  },
+  {
+    "key": "alt+left",
+    "command": "workbench.action.terminal.focus",
+    "when": "problemFocus"
   },
   // 弃用
   {

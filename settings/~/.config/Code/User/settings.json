@@ -19,17 +19,6 @@
 
   "debug.allowBreakpointsEverywhere": true,
   "debug.internalConsoleOptions": "neverOpen",
-  "launch": {
-    "version": "0.2.0",
-    "configurations": [
-      {
-        "type": "index",
-        "request": "launch",
-        "name": "node",
-        "program": "${workspaceFolder}/index.js"
-      }
-    ]
-  },
 
   "explorer.openEditors.visible": 0,
   "explorer.autoReveal": false,
@@ -53,6 +42,9 @@
     "workbench.action.debug.restart",
     "workbench.action.debug.run",
     "workbench.action.debug.start",
+    "workbench.action.debug.stepInto",
+    "workbench.action.debug.stepOut",
+    "workbench.action.debug.stepOver",
     "workbench.action.debug.stop",
     "workbench.action.focusActiveEditorGroup",
     "workbench.action.focusFirstEditorGroup",
@@ -93,11 +85,20 @@
     "workbench.action.terminal.focusAtIndex9",
     "workbench.action.terminal.focusFindWidget",
     "workbench.action.terminal.focusNext",
+    "workbench.action.terminal.focusNextPane",
     "workbench.action.terminal.focusPrevious",
+    "workbench.action.terminal.focusPreviousPane",
     "workbench.action.terminal.hideFindWidget",
     "workbench.action.terminal.kill",
+    "workbench.action.terminal.moveToLineEnd",
+    "workbench.action.terminal.moveToLineStart",
     "workbench.action.terminal.new",
+    "workbench.action.terminal.newInActiveWorkspace",
     "workbench.action.terminal.paste",
+    "workbench.action.terminal.resizePaneDown",
+    "workbench.action.terminal.resizePaneLeft",
+    "workbench.action.terminal.resizePaneRight",
+    "workbench.action.terminal.resizePaneUp",
     "workbench.action.terminal.runActiveFile",
     "workbench.action.terminal.runSelectedText",
     "workbench.action.terminal.scrollDown",
@@ -107,10 +108,12 @@
     "workbench.action.terminal.scrollUp",
     "workbench.action.terminal.scrollUpPage",
     "workbench.action.terminal.selectAll",
+    "workbench.action.terminal.split",
     "workbench.action.terminal.toggleTerminal",
     "workbench.action.togglePanel",
     "workbench.debug.action.focusRepl",
-    "workbench.action.terminal.focus"
+    "workbench.action.terminal.focus",
+    "workbench.action.problems.focus"
   ],
 
   // 文件相关
@@ -138,17 +141,12 @@
   // 拓展
   // standard
   "standard.enable": true,
-  "standard.autoFixOnSave": true,
+  "standard.autoFixOnSave": false,
   "standard.nodePath": null,
   "standard.usePackageJson": true,
 
   // eslint
   "eslint.enable": false,
-
-  // code-runner
-  "code-runner.defaultLanguage": "javascript",
-  "code-runner.runInTerminal": false,
-  "code-runner.fileDirectoryAsCwd": true,
 
   // gitlens
   "gitlens.blame.ignoreWhitespace": true,
@@ -171,8 +169,10 @@
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
     "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
     "suppressUpdateNotice": true,
     "suppressWelcomeNotice": true
   },
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "gitlens.keymap": "alternate"
 }

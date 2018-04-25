@@ -360,6 +360,6 @@
 	},
 	"test": {
 		"prefix": "test",
-		"body": "test('${0}', (t) => {\n\t${1}\n})"
+		"body": "test('${1}', (t) => {\n\t${0}\n})"
 	}
 }

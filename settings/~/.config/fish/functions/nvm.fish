@@ -1,1 +1,3 @@
-/home/xiedacon/.config/fisherman/nvm/nvm.fish
+function nvm
+  bass source ~/.nvm/nvm.sh ';' nvm $argv
+end

@@ -5,6 +5,8 @@
   "editor.snippetSuggestions": "top",
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.emptySelectionClipboard": false,
+  "editor.accessibilitySupport": "off",
+  "editor.multiCursorModifier": "alt",
 
   "workbench.colorTheme": "One Monokai",
   "workbench.iconTheme": "vscode-great-icons",
@@ -19,13 +21,21 @@
 
   "debug.allowBreakpointsEverywhere": true,
   "debug.internalConsoleOptions": "neverOpen",
+  "debug.inlineValues": true,
 
   "explorer.openEditors.visible": 0,
   "explorer.autoReveal": false,
   "explorer.sortOrder": "type",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
 
   "javascript.validate.enable": false,
   "extensions.ignoreRecommendations": false,
+  "grunt.autoDetect": "off",
+  "gulp.autoDetect": "off",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
 
   // git 相关
   "diffEditor.ignoreTrimWhitespace": false,
@@ -156,11 +166,7 @@
   "gitlens.statusBar.format": "${author}, ${date}  |  ${id}, ${message}",
   "gitlens.statusBar.alignment": "left",
   "gitlens.gitExplorer.files.layout": "tree",
-
-  "grunt.autoDetect": "off",
-  "gulp.autoDetect": "off",
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
+  "gitlens.keymap": "alternate",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -173,6 +179,7 @@
     "suppressUpdateNotice": true,
     "suppressWelcomeNotice": true
   },
-  "editor.accessibilitySupport": "off",
-  "gitlens.keymap": "alternate"
+  "gitlens.historyExplorer.enabled": true,
+
+  "npm.enableScriptExplorer": true
 }

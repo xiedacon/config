@@ -44,6 +44,7 @@
   // 终端相关
   "terminal.integrated.shell.linux": "/usr/bin/fish",
   "terminal.external.linuxExec": "x-terminal-emulator",
+  // "terminal.integrated.rendererType": "dom",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.commandsToSkipShell": [
     "editor.action.toggleTabFocusMode",
@@ -150,36 +151,27 @@
 
   // 拓展
   // standard
-  "standard.enable": true,
+  "standard.enable": false,
   "standard.autoFixOnSave": false,
   "standard.nodePath": null,
   "standard.usePackageJson": true,
 
   // eslint
-  "eslint.enable": false,
+  "eslint.enable": true,
 
   // gitlens
-  "gitlens.blame.ignoreWhitespace": true,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.statusBar.dateFormat": "YYYY-MM-DD HH:mm",
-  "gitlens.statusBar.format": "${author}, ${date}  |  ${id}, ${message}",
-  "gitlens.statusBar.alignment": "left",
-  "gitlens.gitExplorer.files.layout": "tree",
-  "gitlens.keymap": "alternate",
   "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true,
-    "suppressUpdateNotice": true,
-    "suppressWelcomeNotice": true
+    "suppressShowKeyBindingsNotice": true
   },
-  "gitlens.historyExplorer.enabled": true,
+  "gitlens.blame.ignoreWhitespace": true,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm",
+  "gitlens.gitExplorer.location": "scm",
+  "gitlens.historyExplorer.enabled": false,
+  "gitlens.resultsExplorer.location": "scm",
+  "gitlens.statusBar.alignment": "left",
+  "gitlens.statusBar.format": "${author}, ${date}  |  ${id}, ${message}",
 
-  "npm.enableScriptExplorer": true
+  "npm.enableScriptExplorer": true,
 }

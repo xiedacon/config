@@ -26,7 +26,7 @@
 |--|--|
 |编程|node, git, nginx, docker(mysql, redis, mongodb 服务端), cli/docker(mysql, redis, mongodb 客户端), vscode, smartgit, nvm|
 |shell|fish|
-|系统工具|htop, dconf|
+|系统工具|htop, dconf, psensor|
 |翻墙|shadowsocks-qt5|
 |工具|shutter, GParted, etcher, speedcrunch, peek, diodon|
 |下载|aria2, wget, BaiduExporter(百度云)|

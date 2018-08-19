@@ -43,6 +43,7 @@
 
   // 终端相关
   "terminal.integrated.shell.linux": "/usr/bin/fish",
+  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "terminal.external.linuxExec": "x-terminal-emulator",
   // "terminal.integrated.rendererType": "dom",
   "terminal.integrated.cursorBlinking": true,

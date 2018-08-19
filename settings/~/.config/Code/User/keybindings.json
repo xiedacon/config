@@ -1,182 +1,165 @@
 // 将键绑定放入此文件中以覆盖默认值
 [
-  // ctrl+.. 页面内
+  // cmd+.. 行内
   {
-    "key": "ctrl+c",
+    "key": "cmd+c",
     "command": "editor.action.clipboardCopyAction",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+x",
+    "key": "cmd+x",
     "command": "editor.action.clipboardCutAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+v",
+    "key": "cmd+v",
     "command": "editor.action.clipboardPasteAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+z",
+    "key": "cmd+z",
     "command": "undo",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+z",
+    "key": "cmd+shift+z",
     "command": "redo",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+s",
+    "key": "cmd+s",
     "command": "workbench.action.files.save"
   },
   {
-    "key": "ctrl+shift+s",
+    "key": "cmd+shift+s",
     "command": "workbench.action.files.saveAll"
   },
   {
-    "key": "ctrl+a",
+    "key": "cmd+a",
     "command": "editor.action.selectAll"
   },
   {
-    "key": "ctrl+d",
+    "key": "cmd+d",
     "command": "editor.action.deleteLines",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+f",
+    "key": "cmd+f",
     "command": "actions.find"
   },
   {
-    "key": "ctrl+shift+f",
+    "key": "cmd+alt+f",
     "command": "editor.action.format"
   },
   {
-    "key": "ctrl+h",
+    "key": "cmd+h",
     "command": "editor.action.startFindReplaceAction"
   },
   {
-    "key": "ctrl+/",
+    "key": "cmd+/",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+/",
+    "key": "cmd+shift+/",
     "command": "editor.action.blockComment",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+l",
+    "key": "cmd+l",
     "command": "editor.action.selectHighlights",
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+w",
+    "key": "cmd+w",
     "command": "workbench.action.closeActiveEditor"
   },
   {
-    "key": "ctrl+n",
+    "key": "cmd+n",
     "command": "explorer.newFile"
   },
   {
-    "key": "ctrl+shift+n",
+    "key": "cmd+shift+n",
     "command": "explorer.newFolder"
   },
   {
-    "key": "ctrl+g",
+    "key": "cmd+g",
     "command": "workbench.action.gotoLine"
   },
   {
-    "key": "ctrl+alt+right",
-    "command": "workbench.action.moveEditorToNextGroup"
-  },
-  {
-    "key": "ctrl+alt+left",
-    "command": "workbench.action.moveEditorToPreviousGroup"
-  },
-  {
-    "key": "ctrl+b",
+    "key": "cmd+b",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+r",
+    "key": "cmd+r",
     "command": "workbench.action.openRecent"
   },
   {
-    "key": "ctrl+shift+r",
+    "key": "cmd+shift+r",
     "command": "workbench.action.reloadWindow"
   },
   {
-    "key": "ctrl+[",
+    "key": "cmd+[",
     "command": "editor.fold",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+[",
+    "key": "cmd+shift+[",
     "command": "editor.foldAll",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+]",
+    "key": "cmd+]",
     "command": "editor.unfold",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+]",
+    "key": "cmd+shift+]",
     "command": "editor.unfoldAll",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+backspace",
-    "command": "deleteWordLeft",
-    "when": "editorTextFocus && !editorReadonly"
+    "key": "cmd+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+delete",
-    "command": "deleteWordRight",
-    "when": "editorTextFocus && !editorReadonly"
+    "key": "cmd+space",
+    "command": "toggleSuggestionDetails",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  // cmd+alt+.. 块级+页面
+  {
+    "key": "cmd+alt+shift+right",
+    "command": "workbench.action.moveEditorToNextGroup"
   },
   {
-    "key": "ctrl+right",
-    "command": "cursorWordEndRight",
-    "when": "editorTextFocus"
+    "key": "cmd+alt+shift+left",
+    "command": "workbench.action.moveEditorToPreviousGroup"
   },
   {
-    "key": "ctrl+shift+right",
-    "command": "cursorWordEndRightSelect",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+left",
-    "command": "cursorWordStartLeft",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+left",
-    "command": "cursorWordStartLeftSelect",
-    "when": "editorTextFocus"
-  },
-  // alt+.. 页面级
-  {
-    "key": "alt+tab",
+    "key": "cmd+alt+up",
     "command": "workbench.action.navigateEditorGroups"
   },
   {
-    "key": "alt+left",
+    "key": "cmd+alt+left",
     "command": "workbench.action.previousEditor"
   },
   {
-    "key": "alt+right",
+    "key": "cmd+alt+right",
     "command": "workbench.action.nextEditor"
   },
-  // super+.. 程序级
   // 特殊
   {
-    "key": "ctrl+shift+p",
+    "key": "cmd+p",
     "command": "workbench.action.showCommands"
   },
   {
     "key": "f1",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+e",
     "command": "workbench.action.quickOpen"
   },
   {
@@ -200,162 +183,142 @@
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+shift+f10",
+    "key": "cmd+shift+f10",
     "command": "editor.action.previewDeclaration"
   },
   {
-    "key": "ctrl+f10",
+    "key": "cmd+f10",
     "command": "editor.action.referenceSearch.trigger"
   },
   {
-    "key": "ctrl+=",
+    "key": "cmd+=",
     "command": "workbench.action.zoomIn"
   },
   {
-    "key": "ctrl+-",
+    "key": "cmd+-",
     "command": "workbench.action.zoomOut"
   },
   // 插件
   {
-    "key": "ctrl+shift+m",
+    "key": "cmd+shift+m",
     "command": "markdown.showPreviewToSide",
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+shift+d",
+    "key": "cmd+shift+d",
     "command": "workbench.view.debug"
   },
   {
-    "key": "ctrl+shift+e",
+    "key": "cmd+shift+e",
     "command": "workbench.view.explorer"
   },
   {
-    "key": "ctrl+shift+g",
+    "key": "cmd+shift+g",
     "command": "workbench.view.scm"
   },
   {
-    "key": "ctrl+alt+f",
+    "key": "cmd+shift+f",
     "command": "workbench.view.search",
     "when": "!searchViewletVisible"
   },
   {
-    "key": "ctrl+f3",
+    "key": "cmd+f3",
     "command": "search.action.focusPreviousSearchResult"
   },
   {
-    "key": "ctrl+f4",
+    "key": "cmd+f4",
     "command": "search.action.focusNextSearchResult"
   },
   {
-    "key": "alt+ctrl+n",
+    "key": "cmd+alt+n",
     "command": "workbench.action.newWindow"
   },
   {
-    "key": "ctrl+`",
-    "command": "workbench.action.togglePanel"
+    "key": "cmd+`",
+    "command": "workbench.action.terminal.toggleTerminal"
   },
   // 终端
   {
-    "key": "ctrl+shift+c",
-    "command": "workbench.action.terminal.copySelection",
-    "when": "terminalFocus && terminalTextSelected"
-  },
-  {
-    "key": "ctrl+shift+v",
-    "command": "workbench.action.terminal.paste",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+backspace",
-    "command": "workbench.action.terminal.deleteWordLeft",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+delete",
-    "command": "workbench.action.terminal.deleteWordRight",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+n",
+    "key": "cmd+n",
     "command": "workbench.action.terminal.new",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+w",
+    "key": "cmd+w",
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+f",
+    "key": "cmd+f",
     "command": "workbench.action.terminal.focusFindWidget",
     "when": "terminalFocus"
   },
   {
-    "key": "alt+up",
+    "key": "cmd+up",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
   },
   {
-    "key": "alt+down",
+    "key": "cmd+down",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
   },
   {
-    "key": "alt+/",
+    "key": "cmd+/",
     "command": "workbench.action.terminal.split",
     "when": "terminalFocus"
   },
   {
-    "key": "alt+tab",
+    "key": "cmd+right",
     "command": "workbench.action.terminal.focusNextPane",
     "when": "terminalFocus"
   },
   {
-    "key": "alt+shift+tab",
+    "key": "cmd+left",
     "command": "workbench.action.terminal.focusPreviousPane",
     "when": "terminalFocus"
   },
-  // 
-  // 
-
   // 弹出面板循环
   {
-    "key": "alt+right",
-    "command": "workbench.action.problems.focus",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "alt+right",
-    "command": "workbench.debug.action.focusRepl",
-    "when": "problemFocus"
-  },
-  {
-    "key": "alt+right",
-    "command": "workbench.action.terminal.focus",
-    "when": "inDebugRepl"
-  },
-  {
-    "key": "alt+left",
+    "key": "cmd+shift+right",
     "command": "workbench.debug.action.focusRepl",
     "when": "terminalFocus"
   },
   {
-    "key": "alt+left",
-    "command": "workbench.action.problems.focus",
+    "key": "cmd+shift+right",
+    "command": "workbench.action.terminal.focus",
     "when": "inDebugRepl"
   },
   {
-    "key": "alt+left",
+    "key": "cmd+shift+left",
+    "command": "workbench.debug.action.focusRepl",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+shift+left",
     "command": "workbench.action.terminal.focus",
-    "when": "problemFocus"
+    "when": "inDebugRepl"
   },
   // 弃用
   {
-    "key": "ctrl+q",
+    "key": "cmd+q",
     "command": ""
   },
   {
-    "key": "ctrl+shift+w",
+    "key": "cmd+shift+w",
     "command": ""
-  }
+  },
+  {
+    "key": "cmd+delete",
+    "command": ""
+  },
+  {
+    "key": "cmd+backspace",
+    "command": ""
+  },
+  {
+    "key": "enter",
+    "command": "",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
 ]

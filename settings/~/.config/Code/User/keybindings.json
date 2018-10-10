@@ -1,10 +1,50 @@
 // 将键绑定放入此文件中以覆盖默认值
 [
-  // cmd+.. 行内
+  // cmd + 功能键
+  { 
+    "key": "cmd+up",
+    "command": "scrollLineUp",
+    "when": "textInputFocus" 
+  },
+  { 
+    "key": "cmd+down",              
+    "command": "scrollLineDown",
+    "when": "textInputFocus" 
+  },
+  { 
+    "key": "cmd+pagedown",
+    "command": "scrollPageDown",
+    "when": "textInputFocus"
+  },
+  { 
+    "key": "cmd+pageup",
+    "command": "scrollPageUp",
+    "when": "textInputFocus"
+  },
+  { 
+    "key": "cmd+home",
+    "command": "cursorTop",
+    "when": "textInputFocus"
+  },
+  { 
+    "key": "cmd+end",
+    "command": "cursorBottom",
+    "when": "textInputFocus"
+  },
   {
-    "key": "cmd+c",
-    "command": "editor.action.clipboardCopyAction",
-    "when": "editorTextFocus"
+    "key": "cmd+=",
+    "command": "workbench.action.zoomIn"
+  },
+  {
+    "key": "cmd+-",
+    "command": "workbench.action.zoomOut"
+  },
+
+  // cmd + zxcvbnasdfghwer
+  {
+    "key": "cmd+z",
+    "command": "undo",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "cmd+x",
@@ -12,31 +52,30 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
+    "key": "cmd+c",
+    "command": "editor.action.clipboardCopyAction",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "cmd+v",
     "command": "editor.action.clipboardPasteAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "cmd+z",
-    "command": "undo",
-    "when": "editorTextFocus && !editorReadonly"
+    "key": "cmd+b",
+    "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "cmd+shift+z",
-    "command": "redo",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+s",
-    "command": "workbench.action.files.save"
-  },
-  {
-    "key": "cmd+shift+s",
-    "command": "workbench.action.files.saveAll"
+    "key": "cmd+n",
+    "command": "explorer.newFile"
   },
   {
     "key": "cmd+a",
     "command": "editor.action.selectAll"
+  },
+  {
+    "key": "cmd+s",
+    "command": "workbench.action.files.save"
   },
   {
     "key": "cmd+d",
@@ -48,21 +87,132 @@
     "command": "actions.find"
   },
   {
-    "key": "cmd+alt+f",
-    "command": "editor.action.format"
+    "key": "cmd+g",
+    "command": "workbench.action.gotoLine"
   },
   {
     "key": "cmd+h",
     "command": "editor.action.startFindReplaceAction"
   },
   {
-    "key": "cmd+/",
-    "command": "editor.action.commentLine",
+    "key": "cmd+w",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.openRecent"
+  },
+
+  // cmd + shift + 功能键
+  // cmd + shift + znmdfgser
+  {
+    "key": "cmd+shift+z",
+    "command": "redo",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "cmd+shift+/",
-    "command": "editor.action.blockComment",
+    "key": "cmd+shift+n",
+    "command": "explorer.newFolder"
+  },
+  {
+    "key": "cmd+shift+m",
+    "command": "markdown.showPreviewToSide",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+shift+d",
+    "command": "workbench.view.debug"
+  },
+  {
+    "key": "cmd+shift+f",
+    "command": "workbench.view.search",
+    "when": "!searchViewletVisible"
+  },
+  {
+    "key": "cmd+shift+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "cmd+shift+s",
+    "command": "workbench.action.files.saveAll"
+  },
+  {
+    "key": "cmd+shift+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "cmd+shift+r",
+    "command": "workbench.action.reloadWindow"
+  },
+
+  // cmd + alt + 功能键
+  {
+    "key": "cmd+alt+left",
+    "command": "workbench.action.previousEditorInGroup"
+  },
+  {
+    "key": "cmd+alt+right",
+    "command": "workbench.action.nextEditorInGroup"
+  },
+  
+
+  // cmd + alt + f
+  {
+    "key": "cmd+alt+f",
+    "command": "editor.action.format"
+  },
+  
+  // cmd + ctrl + 功能键
+  {
+    "key": "cmd+ctrl+up",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "cmd+ctrl+down",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "cmd+ctrl+left",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "cmd+ctrl+right",
+    "command": "workbench.action.navigateRight"
+  },
+
+  // cmd + ctrl + n
+  {
+    "key": "cmd+ctrl+n",
+    "command": "workbench.action.newWindow"
+  },
+
+  // cmd + ctrl + shift + 功能键
+  {
+    "key": "cmd+ctrl+shift+up",
+    "command": "workbench.action.moveEditorToAboveGroup"
+  },
+  {
+    "key": "cmd+ctrl+shift+down",
+    "command": "workbench.action.moveEditorToBelowGroup"
+  },
+  {
+    "key": "cmd+ctrl+shift+left",
+    "command": "workbench.action.moveEditorToLeftGroup"
+  },
+  {
+    "key": "cmd+ctrl+shift+right",
+    "command": "workbench.action.moveEditorToRightGroup"
+  },
+
+  // coding
+  // cmd + /lp[]`
+  {
+    "key": "cmd+/",
+    "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
@@ -71,41 +221,12 @@
     "when": "editorFocus"
   },
   {
-    "key": "cmd+w",
-    "command": "workbench.action.closeActiveEditor"
-  },
-  {
-    "key": "cmd+n",
-    "command": "explorer.newFile"
-  },
-  {
-    "key": "cmd+shift+n",
-    "command": "explorer.newFolder"
-  },
-  {
-    "key": "cmd+g",
-    "command": "workbench.action.gotoLine"
-  },
-  {
-    "key": "cmd+b",
-    "command": "workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "cmd+r",
-    "command": "workbench.action.openRecent"
-  },
-  {
-    "key": "cmd+shift+r",
-    "command": "workbench.action.reloadWindow"
+    "key": "cmd+p",
+    "command": "workbench.action.showCommands"
   },
   {
     "key": "cmd+[",
     "command": "editor.fold",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+shift+[",
-    "command": "editor.foldAll",
     "when": "editorTextFocus"
   },
   {
@@ -114,10 +235,26 @@
     "when": "editorTextFocus"
   },
   {
+    "key": "cmd+`",
+    "command": "workbench.action.togglePanel"
+  },
+  // cmd + shift + /[]
+  {
+    "key": "cmd+shift+/",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+shift+[",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "cmd+shift+]",
     "command": "editor.unfoldAll",
     "when": "editorTextFocus"
   },
+  // others
   {
     "key": "cmd+space",
     "command": "editor.action.triggerSuggest",
@@ -128,49 +265,14 @@
     "command": "toggleSuggestionDetails",
     "when": "suggestWidgetVisible && textInputFocus"
   },
-  // cmd+alt+.. 块级+页面
-  {
-    "key": "cmd+alt+shift+right",
-    "command": "workbench.action.moveEditorToNextGroup"
-  },
-  {
-    "key": "cmd+alt+shift+left",
-    "command": "workbench.action.moveEditorToPreviousGroup"
-  },
-  {
-    "key": "cmd+alt+up",
-    "command": "workbench.action.navigateEditorGroups"
-  },
-  {
-    "key": "cmd+alt+left",
-    "command": "workbench.action.previousEditor"
-  },
-  {
-    "key": "cmd+alt+right",
-    "command": "workbench.action.nextEditor"
-  },
-  // 特殊
-  {
-    "key": "cmd+p",
-    "command": "workbench.action.showCommands"
-  },
   {
     "key": "f1",
-    "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "cmd+e",
     "command": "workbench.action.quickOpen"
   },
   {
     "key": "f2",
     "command": "editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "f2",
-    "command": "renameFile",
-    "when": "explorerViewletVisible && filesExplorerFocus"
   },
   {
     "key": "f3",
@@ -182,61 +284,7 @@
     "command": "editor.action.nextMatchFindAction",
     "when": "editorFocus"
   },
-  {
-    "key": "cmd+shift+f10",
-    "command": "editor.action.previewDeclaration"
-  },
-  {
-    "key": "cmd+f10",
-    "command": "editor.action.referenceSearch.trigger"
-  },
-  {
-    "key": "cmd+=",
-    "command": "workbench.action.zoomIn"
-  },
-  {
-    "key": "cmd+-",
-    "command": "workbench.action.zoomOut"
-  },
-  // 插件
-  {
-    "key": "cmd+shift+m",
-    "command": "markdown.showPreviewToSide",
-    "when": "editorFocus"
-  },
-  {
-    "key": "cmd+shift+d",
-    "command": "workbench.view.debug"
-  },
-  {
-    "key": "cmd+shift+e",
-    "command": "workbench.view.explorer"
-  },
-  {
-    "key": "cmd+shift+g",
-    "command": "workbench.view.scm"
-  },
-  {
-    "key": "cmd+shift+f",
-    "command": "workbench.view.search",
-    "when": "!searchViewletVisible"
-  },
-  {
-    "key": "cmd+f3",
-    "command": "search.action.focusPreviousSearchResult"
-  },
-  {
-    "key": "cmd+f4",
-    "command": "search.action.focusNextSearchResult"
-  },
-  {
-    "key": "cmd+alt+n",
-    "command": "workbench.action.newWindow"
-  },
-  {
-    "key": "cmd+`",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
+  
   // 终端
   {
     "key": "cmd+n",
@@ -280,25 +328,48 @@
   },
   // 弹出面板循环
   {
-    "key": "cmd+shift+right",
+    "key": "cmd+alt+right",
     "command": "workbench.debug.action.focusRepl",
     "when": "terminalFocus"
   },
   {
-    "key": "cmd+shift+right",
+    "key": "cmd+alt+right",
     "command": "workbench.action.terminal.focus",
     "when": "inDebugRepl"
   },
   {
-    "key": "cmd+shift+left",
+    "key": "cmd+alt+left",
     "command": "workbench.debug.action.focusRepl",
     "when": "terminalFocus"
   },
   {
-    "key": "cmd+shift+left",
+    "key": "cmd+alt+left",
     "command": "workbench.action.terminal.focus",
     "when": "inDebugRepl"
   },
+
+  // 高级
+  {
+    "key": "cmd+shift+f10",
+    "command": "editor.action.previewDeclaration"
+  },
+  {
+    "key": "cmd+f10",
+    "command": "editor.action.referenceSearch.trigger"
+  },
+
+  // 兼容
+  {
+    "key": "f2",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  { 
+    "key": "enter",
+    "command": "list.select",
+    "when": "listFocus && !inputFocus"
+  },
+
   // 弃用
   {
     "key": "cmd+q",
@@ -317,8 +388,15 @@
     "command": ""
   },
   {
-    "key": "enter",
-    "command": "",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    "key": "cmd+1",
+    "command": ""
+  },
+  {
+    "key": "cmd+2",
+    "command": ""
+  },
+  {
+    "key": "cmd+3",
+    "command": ""
   },
 ]

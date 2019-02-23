@@ -16,7 +16,6 @@
   "workbench.startupEditor": "none",
 
   "window.newWindowDimensions": "inherit",
-  "window.menuBarVisibility": "hidden",
   "window.zoomLevel": 0,
 
   "debug.allowBreakpointsEverywhere": true,
@@ -38,7 +37,7 @@
   },
 
   // git 相关
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   "git.confirmSync": false,
 
   // 终端相关
@@ -151,13 +150,8 @@
   },
 
   // 拓展
-  // standard
-  "standard.enable": false,
-  "standard.autoFixOnSave": false,
-  "standard.nodePath": null,
-  "standard.usePackageJson": true,
 
-  // eslint
+  // eslin
   "eslint.enable": true,
 
   // gitlens
@@ -168,13 +162,26 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm",
-  "gitlens.gitExplorer.location": "scm",
-  "gitlens.historyExplorer.enabled": false,
-  "gitlens.resultsExplorer.location": "scm",
   "gitlens.statusBar.alignment": "left",
   "gitlens.statusBar.format": "${author}, ${date}  |  ${id}, ${message}",
+  "gitlens.views.repositories.location": "scm",
+  "gitlens.views.compare.location": "scm",
+  "gitlens.views.search.location": "scm",
+  "gitlens.views.fileHistory.location": "scm",
+  "gitlens.views.lineHistory.location": "scm",
 
+  // liveshare
+  "liveshare.autoShareTerminals": false,
+  "liveshare.autoShareServers": false,
+  "liveshare.increasedGuestLimit": true,
+  "liveshare.guestApprovalRequired": true,
+  "liveshare.showReadOnlyUsersInEditor": "always",
+  
   "npm.enableScriptExplorer": true,
   "javascript.updateImportsOnFileMove.enabled": "never",
   "terminal.integrated.rendererType": "dom",
+  "workbench.sideBar.location": "left",
+
+  "lua.preferLuaCheckErrors": true,
+  "eslint.autoFixOnSave": true,
 }

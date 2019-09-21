@@ -25,5 +25,126 @@
 			"-- Copyright (c) ${CURRENT_YEAR}, Souche Inc.",
 			"\n"
 		]
+	},
+	"require": {
+		"prefix": "require",
+		"body": [
+			"local $0 = require \"$1\"",
+		]
+	},
+	"print": {
+		"prefix": "print",
+		"body": [
+			"print($0)",
+		]
+	},
+	"setmetatable": {
+		"prefix": "setmetatable",
+		"body": [
+			"setmetatable($1, {",
+			"\t$0",
+			"})",
+		]
+	},
+
+	"local": {
+		"prefix": "local",
+		"body": [
+			"local $1 = $0",
+		]
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if $1 then",
+			"\t$0",
+			"end"
+		]
+	},
+	"ifnot": {
+		"prefix": "ifnot",
+		"body": [
+			"if not $1 then",
+			"\t$0",
+			"end"
+		]
+	},
+	"ifelse": {
+		"prefix": "ifelse",
+		"body": [
+			"if $1 then",
+			"\t$2",
+			"else",
+			"\t$0",
+			"end"
+		]
+	},
+	"ifelseif": {
+		"prefix": "ifelseif",
+		"body": [
+			"if $1 then",
+			"\t$2",
+			"elseif $3 then",
+			"\t$4",
+			"else",
+			"\t$0",
+			"end"
+		]
+	},
+	"fori": {
+		"prefix": "fori",
+		"body": [
+			"for i = 1, $1 do",
+			"\t$0",
+			"end"
+		]
+	},
+	"forinpairs": {
+		"prefix": "forinpairs",
+		"body": [
+			"for k, v in paris($1) do",
+			"\t$0",
+			"end"
+		]
+	},
+	"forinipairs": {
+		"prefix": "forinipairs",
+		"body": [
+			"for k, v in iparis($1) do",
+			"\t$0",
+			"end"
+		]
+	},
+	"while": {
+		"prefix": "while",
+		"body": [
+			"while $1 do",
+			"\t$0",
+			"end"
+		]
+	},
+	"repeat": {
+		"prefix": "repeat",
+		"body": [
+			"repeat",
+			"\t$1",
+			"until $0"
+		]
+	},
+	"function": {
+		"prefix": "function",
+		"body": [
+			"function ($1)",
+			"\t$0",
+			"end"
+		]
+	},
+	
+	// openresty
+	"ngxlog": {
+		"prefix": "ngxlog",
+		"body": [
+			"ngx.log(ngx.ERR, $0)",
+		]
 	}
 }

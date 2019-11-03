@@ -48,6 +48,7 @@
   "explorer.incrementalNaming": "smart",
   "explorer.openEditors.visible": 0,
   "explorer.sortOrder": "type",
+  "explorer.autoReveal": false,
 
   // 文件相关
   "files.associations": {
@@ -87,7 +88,7 @@
   "search.useReplacePreview": true,
 
   // 终端相关
-  "terminal.integrated.shell.linux": "/usr/bin/fish",
+  "terminal.integrated.shell.linux": "/bin/bash",
   "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "terminal.external.linuxExec": "x-terminal-emulator",
   "terminal.integrated.cursorBlinking": true,

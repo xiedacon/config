@@ -15,8 +15,8 @@
 
 > 钥匙环
 >
-> * add-apt-repository ppa:git-core/ppa 
-> * add-apt-repository ppa:nginx/stable 
+> * add-apt-repository ppa:git-core/ppa
+> * add-apt-repository ppa:nginx/stable
 > * add-apt-repository ppa:philip.scott/elementary-tweaks
 > * add-apt-repository ppa:diodon-team/stable
 > * add-apt-repository ppa:notepadqq-team/notepadqq

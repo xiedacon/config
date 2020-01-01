@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ ! "$1" ]; then
+  echo "eg: bump 0.0.1"
+  exit 1;
+fi
+
+version="v$1"
+commit_message="chore: bump version to $1"
+
+git add .
+git commit -m "$commit_message"
+
+git tag -a "$version" -m "$commit_message"
+
+git push
+git push --tags

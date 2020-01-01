@@ -70,3 +70,7 @@ fishd.*
 workspaceStorage
 globalStorage
 .ssh
+
+settings/~/.local
+settings/~/.aria2
+!settings/~/.aria2/aria2.conf

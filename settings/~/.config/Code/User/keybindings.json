@@ -1,32 +1,32 @@
 // 将键绑定放入此文件中以覆盖默认值
 [
   // cmd + 功能键
-  { 
+  {
     "key": "cmd+up",
     "command": "scrollLineUp",
-    "when": "textInputFocus" 
+    "when": "textInputFocus"
   },
-  { 
-    "key": "cmd+down",              
+  {
+    "key": "cmd+down",
     "command": "scrollLineDown",
-    "when": "textInputFocus" 
+    "when": "textInputFocus"
   },
-  { 
+  {
     "key": "cmd+pagedown",
     "command": "scrollPageDown",
     "when": "textInputFocus"
   },
-  { 
+  {
     "key": "cmd+pageup",
     "command": "scrollPageUp",
     "when": "textInputFocus"
   },
-  { 
+  {
     "key": "cmd+home",
     "command": "cursorTop",
     "when": "textInputFocus"
   },
-  { 
+  {
     "key": "cmd+end",
     "command": "cursorBottom",
     "when": "textInputFocus"
@@ -158,14 +158,13 @@
     "key": "cmd+alt+right",
     "command": "workbench.action.nextEditorInGroup"
   },
-  
 
   // cmd + alt + f
   {
     "key": "cmd+alt+f",
     "command": "editor.action.format"
   },
-  
+
   // cmd + ctrl + 功能键
   {
     "key": "cmd+ctrl+up",
@@ -238,6 +237,10 @@
     "key": "cmd+`",
     "command": "workbench.action.togglePanel"
   },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.togglePanel"
+  },
   // cmd + shift + /[]
   {
     "key": "cmd+shift+/",
@@ -284,7 +287,7 @@
     "command": "editor.action.nextMatchFindAction",
     "when": "editorFocus"
   },
-  
+
   // 终端
   {
     "key": "cmd+n",
@@ -364,7 +367,7 @@
     "command": "renameFile",
     "when": "explorerViewletVisible && filesExplorerFocus"
   },
-  { 
+  {
     "key": "enter",
     "command": "list.select",
     "when": "listFocus && !inputFocus"

@@ -197,6 +197,7 @@
     "javascript",
     "javascriptreact",
     { "language": "typescript", "autoFix": true },
+    { "language": "typescriptreact", "autoFix": true },
     "html"
   ],
 
@@ -214,25 +215,6 @@
   "gitlens.views.fileHistory.location": "scm",
   "gitlens.views.lineHistory.location": "scm",
   "gitlens.liveshare.allowGuestAccess": true,
-
-  // liveshare
-  "liveshare.autoShareTerminals": false,
-  "liveshare.autoShareServers": false,
-  "liveshare.comments": true,
-  "liveshare.guestApprovalRequired": true,
-  "liveshare.increasedGuestLimit": true,
-  "liveshare.populateGitCoAuthors": "always",
-  "liveshare.showReadOnlyUsersInEditor": "always",
-  "liveshare.showVerboseNotifications": true,
-
-  // lua
-  "lua.preferLuaCheckErrors": true,
-
-  // vsintellicode
-  "vsintellicode.java.completionsEnabled": true,
-  "vsintellicode.python.completionsEnabled": true,
-  "vsintellicode.typescript.completionsEnabled": true,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.codeLens.scopes": [
     "document",
@@ -282,4 +264,22 @@
     }
   },
 
+  // liveshare
+  "liveshare.autoShareTerminals": false,
+  "liveshare.autoShareServers": false,
+  "liveshare.comments": true,
+  "liveshare.guestApprovalRequired": true,
+  "liveshare.increasedGuestLimit": true,
+  "liveshare.populateGitCoAuthors": "always",
+  "liveshare.showReadOnlyUsersInEditor": "always",
+  "liveshare.showVerboseNotifications": true,
+
+  // lua
+  "lua.preferLuaCheckErrors": true,
+
+  // vsintellicode
+  "vsintellicode.java.completionsEnabled": true,
+  "vsintellicode.python.completionsEnabled": true,
+  "vsintellicode.typescript.completionsEnabled": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }

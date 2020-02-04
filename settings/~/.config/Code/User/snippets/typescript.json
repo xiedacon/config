@@ -52,6 +52,26 @@
 		"prefix": "constr",
 		"body": "const ${0} = require('$1')"
 	},
+	"import": {
+		"prefix": "import",
+		"body": "import $0 from '$1'"
+	},
+	"import {}": {
+		"prefix": "import {}",
+		"body": "import { $0 } from '$1'"
+	},
+	"import *": {
+		"prefix": "import *",
+		"body": "import * as $0 from '$1'"
+	},
+	"export default obj": {
+		"prefix": "export default obj",
+		"body": "export default {\n\t$0\n}"
+	},
+	"export default class": {
+		"prefix": "export default",
+		"body": "export default class $1 {\n\t$0\n}"
+	},
 	"var":{
 		"prefix": "var",
 		"body": "var ${1} = ${0}"

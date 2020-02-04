@@ -94,7 +94,7 @@
   "search.useReplacePreview": true,
 
   // 终端相关
-  "terminal.integrated.shell.linux": "/bin/bash",
+  "terminal.integrated.shell.linux": "/usr/bin/fish",
   "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "terminal.external.linuxExec": "x-terminal-emulator",
   "terminal.integrated.cursorBlinking": true,
@@ -183,7 +183,7 @@
 
   // 其他
   "breadcrumbs.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "extensions.ignoreRecommendations": false,
   "extensions.showRecommendationsOnlyOnDemand": true,
 

@@ -5,8 +5,10 @@
   "editor.emptySelectionClipboard": false,
   "editor.find.addExtraSpaceOnTop": true,
   "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "editor.gotoLocation.multiple": "peek",
-  "editor.matchBrackets": true,
+  "editor.gotoLocation.multipleDefinitions": "peek",
+  "editor.gotoLocation.multipleImplementations": "peek",
+  "editor.gotoLocation.multipleDeclarations": "peek",
+  "editor.matchBrackets": "always",
   "editor.minimap.showSlider": "always",
   "editor.multiCursorModifier": "alt",
   "editor.tabSize": 2,
@@ -21,6 +23,11 @@
   "editor.suggest.showIcons": true,
   "editor.suggestSelection": "first",
   "editor.wordBasedSuggestions": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "problems.showCurrentInStatus": true,
 
   // 工作区
   "workbench.activityBar.visible": false,
@@ -53,7 +60,6 @@
   // 文件相关
   "files.associations": {
     "*.fish": "shellscript",
-    // "*.ts": "javascript"
   },
   "files.autoSave": "onFocusChange",
   "files.defaultLanguage": "js",
@@ -191,15 +197,7 @@
   // 拓展
 
   // eslint
-  "eslint.autoFixOnSave": true,
   "eslint.enable": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    { "language": "typescript", "autoFix": true },
-    { "language": "typescriptreact", "autoFix": true },
-    "html"
-  ],
 
   // gitlens
   "gitlens.advanced.messages": {

@@ -1,3 +1,8 @@
+
+function _hostname
+  cat /etc/hostname 2> /dev/null
+end
+
 function _git_branch_name
   echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
 end
@@ -26,6 +31,11 @@ function fish_prompt
   # Display [venvname] if in a virtualenv
   if set -q VIRTUAL_ENV
       echo -n -s (set_color -b cyan black) '[' (basename "$VIRTUAL_ENV") ']' $normal ' '
+  end
+
+  # Show hostname
+  if [ (_hostname) ]
+    echo -n -s '[' (_hostname) '] '
   end
 
   # Print pwd or full path

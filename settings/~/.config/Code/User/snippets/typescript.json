@@ -60,10 +60,6 @@
 		"prefix": "import {}",
 		"body": "import { $0 } from '$1'"
 	},
-	"import *": {
-		"prefix": "import *",
-		"body": "import * as $0 from '$1'"
-	},
 	"export default obj": {
 		"prefix": "export default obj",
 		"body": "export default {\n\t$0\n}"

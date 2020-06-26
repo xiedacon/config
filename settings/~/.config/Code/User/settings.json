@@ -186,8 +186,6 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "extensions.ignoreRecommendations": false,
   "extensions.showRecommendationsOnlyOnDemand": true,
-
-  "javascript.validate.enable": true,
   "javascript.updateImportsOnFileMove.enabled": "never",
   "typescript.updateImportsOnFileMove.enabled": "always",
 

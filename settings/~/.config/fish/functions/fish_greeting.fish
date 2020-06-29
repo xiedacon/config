@@ -47,6 +47,11 @@ end
 
 function fish_greeting
   _set_color
-  
-  echo 'Talk is cheap. Show me the code.'
+
+  set words
+  set words[1] 'Talk is cheap. Show me the code.'
+  set words[2] "Don't be afraid of change, be afraid of not changing."
+
+  echo $words[(random 1 (count $words))]
+
 end

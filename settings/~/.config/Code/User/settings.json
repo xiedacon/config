@@ -278,4 +278,14 @@
   "vsintellicode.python.completionsEnabled": true,
   "vsintellicode.typescript.completionsEnabled": true,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  // git-graph
+  "git-graph.commitDetailsViewLocation": "Docked to Bottom",
+  "git-graph.customBranchGlobPatterns": [
+    {"name": "feature", "glob": "feature/*"},
+    {"name": "hotfix", "glob": "hotfix/*"}
+  ],
+  "git-graph.dateFormat": "ISO Date & Time",
+  "git-graph.graphStyle": "rounded",
+  "git-graph.dialog.resetCurrentBranchToCommit.mode": "Hard"
 }

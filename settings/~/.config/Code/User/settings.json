@@ -1,291 +1,114 @@
 {
-  // 编辑器
-  "editor.accessibilitySupport": "auto",
+  // <!-- debug: start -->
+  "debug.inlineValues": "on",
+  "debug.internalConsoleOptions": "neverOpen",
+  // <!-- debug: end -->
+
+  // <!-- editor: start -->
+  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
   "editor.copyWithSyntaxHighlighting": false,
   "editor.emptySelectionClipboard": false,
   "editor.find.addExtraSpaceOnTop": true,
-  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "editor.gotoLocation.multipleDefinitions": "peek",
-  "editor.gotoLocation.multipleImplementations": "peek",
-  "editor.gotoLocation.multipleDeclarations": "peek",
-  "editor.matchBrackets": "always",
+  "editor.find.cursorMoveOnType": false,
   "editor.minimap.showSlider": "always",
-  "editor.multiCursorModifier": "alt",
-  "editor.tabSize": 2,
-  "editor.trimAutoWhitespace": true,
-  // 编辑器 - suggest
-  "editor.acceptSuggestionOnCommitCharacter": true,
-  "editor.acceptSuggestionOnEnter": "smart",
-  "editor.snippetSuggestions": "inline",
-  "editor.suggest.filterGraceful": true,
-  "editor.suggest.maxVisibleSuggestions": 15,
-  "editor.suggest.shareSuggestSelections": true,
-  "editor.suggest.showIcons": true,
-  "editor.suggestSelection": "first",
-  "editor.wordBasedSuggestions": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
+  // <!-- editor: end -->
 
-  "problems.showCurrentInStatus": true,
-
-  // 工作区
-  "workbench.activityBar.visible": false,
-  "workbench.commandPalette.history": 5,
-  "workbench.colorTheme": "One Monokai",
-  "workbench.editor.openPositioning": "right",
-  "workbench.editor.restoreViewState": true,
-  "workbench.iconTheme": "vscode-great-icons",
-  "workbench.sideBar.location": "left",
-  "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": true,
-
-  // 窗口
-  "window.newWindowDimensions": "inherit",
-  "window.zoomLevel": 0,
-
-  // debug
-  "debug.allowBreakpointsEverywhere": true,
-  "debug.inlineValues": true,
-  "debug.internalConsoleOptions": "neverOpen",
-
-  // 资源管理器
+  // <!-- explorer: start -->
+  "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "explorer.incrementalNaming": "smart",
   "explorer.openEditors.visible": 0,
   "explorer.sortOrder": "type",
-  "explorer.autoReveal": false,
+  // <!-- explorer: end -->
 
-  // 文件相关
-  "files.associations": {
-    "*.fish": "shellscript",
-  },
+  // <!-- files: start -->
   "files.autoSave": "onFocusChange",
-  "files.defaultLanguage": "js",
-  "files.enableTrash": true,
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-  },
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "files.watcherExclude": {
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "**/node_modules/**": true
-  },
+  // <!-- files: end -->
 
-  // git 相关
-  "git.allowForcePush": false,
+  // <!-- git: start -->
   "git.confirmSync": false,
   "git.enableStatusBarSync": true,
   "git.fetchOnPull": true,
-  "git.openDiffOnClick": true,
-  "git.pullTags": true,
   "git.supportCancellation": true,
+  // <!-- git: end -->
 
-  // 搜索相关
-  "search.useGlobalIgnoreFiles": true,
-  "search.useIgnoreFiles": true,
-  "search.useReplacePreview": true,
-
-  // 终端相关
-  "terminal.integrated.shell.linux": "/usr/bin/fish",
-  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
-  "terminal.external.linuxExec": "x-terminal-emulator",
+  // <!-- terminal: start -->
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.rendererType": "dom",
-  "terminal.integrated.confirmOnExit": true,
-  "terminal.integrated.commandsToSkipShell": [
-    "editor.action.toggleTabFocusMode",
-    "workbench.action.debug.continue",
-    "workbench.action.debug.pause",
-    "workbench.action.debug.restart",
-    "workbench.action.debug.run",
-    "workbench.action.debug.start",
-    "workbench.action.debug.stepInto",
-    "workbench.action.debug.stepOut",
-    "workbench.action.debug.stepOver",
-    "workbench.action.debug.stop",
-    "workbench.action.focusActiveEditorGroup",
-    "workbench.action.focusFirstEditorGroup",
-    "workbench.action.focusSecondEditorGroup",
-    "workbench.action.focusThirdEditorGroup",
-    "workbench.action.navigateDown",
-    "workbench.action.navigateLeft",
-    "workbench.action.navigateRight",
-    "workbench.action.navigateUp",
-    "workbench.action.openNextRecentlyUsedEditorInGroup",
-    "workbench.action.openPreviousRecentlyUsedEditorInGroup",
-    "workbench.action.quickOpen",
-    "workbench.action.quickOpenPreviousEditor",
-    "workbench.action.quickOpenView",
-    "workbench.action.showCommands",
-    "workbench.action.tasks.build",
-    "workbench.action.tasks.restartTask",
-    "workbench.action.tasks.runTask",
-    "workbench.action.tasks.showLog",
-    "workbench.action.tasks.showTasks",
-    "workbench.action.tasks.terminate",
-    "workbench.action.tasks.test",
-    "workbench.action.terminal.clear",
-    "workbench.action.terminal.copySelection",
-    "workbench.action.terminal.deleteWordLeft",
-    "workbench.action.terminal.deleteWordRight",
-    "workbench.action.terminal.findWidget.history.showNext",
-    "workbench.action.terminal.findWidget.history.showPrevious",
-    "workbench.action.terminal.focus",
-    "workbench.action.terminal.focusAtIndex1",
-    "workbench.action.terminal.focusAtIndex2",
-    "workbench.action.terminal.focusAtIndex3",
-    "workbench.action.terminal.focusAtIndex4",
-    "workbench.action.terminal.focusAtIndex5",
-    "workbench.action.terminal.focusAtIndex6",
-    "workbench.action.terminal.focusAtIndex7",
-    "workbench.action.terminal.focusAtIndex8",
-    "workbench.action.terminal.focusAtIndex9",
-    "workbench.action.terminal.focusFindWidget",
-    "workbench.action.terminal.focusNext",
-    "workbench.action.terminal.focusNextPane",
-    "workbench.action.terminal.focusPrevious",
-    "workbench.action.terminal.focusPreviousPane",
-    "workbench.action.terminal.hideFindWidget",
-    "workbench.action.terminal.kill",
-    "workbench.action.terminal.moveToLineEnd",
-    "workbench.action.terminal.moveToLineStart",
-    "workbench.action.terminal.new",
-    "workbench.action.terminal.newInActiveWorkspace",
-    "workbench.action.terminal.paste",
-    "workbench.action.terminal.resizePaneDown",
-    "workbench.action.terminal.resizePaneLeft",
-    "workbench.action.terminal.resizePaneRight",
-    "workbench.action.terminal.resizePaneUp",
-    "workbench.action.terminal.runActiveFile",
-    "workbench.action.terminal.runSelectedText",
-    "workbench.action.terminal.scrollDown",
-    "workbench.action.terminal.scrollDownPage",
-    "workbench.action.terminal.scrollToBottom",
-    "workbench.action.terminal.scrollToTop",
-    "workbench.action.terminal.scrollUp",
-    "workbench.action.terminal.scrollUpPage",
-    "workbench.action.terminal.selectAll",
-    "workbench.action.terminal.split",
-    "workbench.action.terminal.toggleTerminal",
-    "workbench.action.togglePanel",
-    "workbench.debug.action.focusRepl",
-    "workbench.action.terminal.focus",
-    "workbench.action.problems.focus"
-  ],
+  "terminal.integrated.confirmOnExit": "always",
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.tabs.hideCondition": "never",
+  "terminal.integrated.tabs.showActiveTerminal": "always",
+  // <!-- terminal: end -->
 
-  // 其他
-  "breadcrumbs.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "extensions.ignoreRecommendations": false,
-  "extensions.showRecommendationsOnlyOnDemand": true,
+  // <!-- window: start -->
+  "window.title": "${rootName}",
+  "window.newWindowDimensions": "inherit",
+  // <!-- window: end -->
+
+  // <!-- workbench: start -->
+  "workbench.colorTheme": "my-monokai",
+  "workbench.iconTheme": "vscode-great-icons",
+
+  "workbench.commandPalette.history": 5,
+  "workbench.startupEditor": "none",
+  // <!-- workbench: end -->
+
+  // <!-- javascript: start -->
   "javascript.updateImportsOnFileMove.enabled": "never",
+  "[javascript]": {},
+  // <!-- javascript: end -->
+
+  // <!-- typescript: start -->
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": false,
+  "[typescript]": {},
+  // <!-- typescript: end -->
 
-  "npm.autoDetect": "on",
-  "npm.enableScriptExplorer": true,
-
-  // 拓展
-
-  // eslint
-  "eslint.enable": true,
-
-  // gitlens
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
-  "gitlens.blame.ignoreWhitespace": true,
-  "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm",
-  "gitlens.statusBar.alignment": "left",
-  "gitlens.statusBar.format": "${author}, ${date}  |  ${id}, ${message}",
-  "gitlens.views.repositories.location": "scm",
-  "gitlens.views.compare.location": "scm",
-  "gitlens.views.search.location": "scm",
-  "gitlens.views.fileHistory.location": "scm",
-  "gitlens.views.lineHistory.location": "scm",
-  "gitlens.liveshare.allowGuestAccess": true,
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.codeLens.scopes": [
-    "document",
-    "containers"
-  ],
-  "gitlens.codeLens.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.blame.highlight.locations": [
-    "line",
-    "overview",
-    "gutter"
-  ],
-  "gitlens.recentChanges.highlight.locations": [
-    "gutter",
-    "line",
-    "overview"
-  ],
-  "gitlens.menus": {
-    "editorGroup": {
-      "blame": true,
-      "compare": true
-    },
-    "editorTab": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true
-    },
-    "explorer": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true
-    },
-    "scmGroup": {
-      "compare": true,
-      "openClose": true,
-      "stash": true,
-      "stashInline": true
-    },
-    "scmItem": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true,
-      "stash": true
+  // <!-- go: start -->
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false
     }
   },
+  // <!-- go: end -->
 
-  // liveshare
-  "liveshare.autoShareTerminals": false,
-  "liveshare.autoShareServers": false,
-  "liveshare.comments": true,
-  "liveshare.guestApprovalRequired": true,
-  "liveshare.increasedGuestLimit": true,
-  "liveshare.populateGitCoAuthors": "always",
-  "liveshare.showReadOnlyUsersInEditor": "always",
-  "liveshare.showVerboseNotifications": true,
+  // <!-- extensions: start -->
 
-  // lua
-  "lua.preferLuaCheckErrors": true,
-
-  // vsintellicode
-  "vsintellicode.java.completionsEnabled": true,
-  "vsintellicode.python.completionsEnabled": true,
-  "vsintellicode.typescript.completionsEnabled": true,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
-  // git-graph
-  "git-graph.commitDetailsViewLocation": "Docked to Bottom",
+  // <!-- git-graph: start -->
+  "git-graph.commitDetailsView.location": "Docked to Bottom",
   "git-graph.customBranchGlobPatterns": [
-    {"name": "feature", "glob": "feature/*"},
-    {"name": "hotfix", "glob": "hotfix/*"}
+    { "name": "feature", "glob": "feature/*" },
+    { "name": "hotfix", "glob": "hotfix/*" }
   ],
-  "git-graph.dateFormat": "ISO Date & Time",
-  "git-graph.graphStyle": "rounded",
-  "git-graph.dialog.resetCurrentBranchToCommit.mode": "Hard"
+  "git-graph.date.format": "ISO Date & Time",
+  "git-graph.dialog.resetCurrentBranchToCommit.mode": "Hard",
+  // <!-- git-graph: end -->
+
+  // <!-- gitlens: start -->
+  "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "gitlens.defaultDateStyle": "absolute",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.graph.statusBar.enabled": false,
+  "gitlens.hovers.enabled": true,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.statusBar.alignment": "left",
+  "gitlens.statusBar.format": "${author}, ${date}  |  ${id}, ${message}",
+  // <!-- gitlens: end -->
+
+  // <!-- liveshare: start -->
+  "liveshare.guestApprovalRequired": true,
+  "liveshare.showReadOnlyUsersInEditor": "always"
+  // <!-- liveshare: end -->
+
+  // <!-- extensions: end -->
 }

@@ -1,5 +1,5 @@
 {
-	/*
+  /*
 	// Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
@@ -14,379 +14,379 @@
 		"description": "Log output to console"
 	},
 */
-	"use strict": {
-		"prefix": "use",
-		"body": [
-			"/**",
-			" * xiedacon created at ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
-			" *",
-			" * Copyright (c) ${CURRENT_YEAR} xiedacon, all rights reserved.",
-			" */",
-			""
-		]
-	},
-	"let":{
-		"prefix": "let",
-		"body": "let ${1} = ${0}"
-	},
-	"let undefined":{
-		"prefix": "letu",
-		"body": "let ${0}"
-	},
-	"const":{
-		"prefix": "const",
-		"body": "const ${1} = ${0}"
-	},
-	"const require":{
-		"prefix": "constr",
-		"body": "const ${0} = require('$1')"
-	},
-	"import": {
-		"prefix": "import",
-		"body": "import $0 from '$1'"
-	},
-	"import {}": {
-		"prefix": "import {}",
-		"body": "import { $0 } from '$1'"
-	},
-	"export default obj": {
-		"prefix": "export default obj",
-		"body": "export default {\n\t$0\n}"
-	},
-	"export default class": {
-		"prefix": "export default",
-		"body": "export default class $1 {\n\t$0\n}"
-	},
-	"var":{
-		"prefix": "var",
-		"body": "var ${1} = ${0}"
-	},
-	"var undefined":{
-		"prefix": "varu",
-		"body": "var ${0}"
-	},
-	// function
-	"()": {
-		"prefix": "func",
-		"body": "(${1}) => {\n\t${0}\n}"
-	},
-	"(err)": {
-		"prefix": "funce",
-		"body": "(${1:err}) => {\n\t${0}\n}"
-	},
-	"function": {
-		"prefix": "funct",
-		"body": "function (${1}) {\n\t${0}\n}"
-	},
-	"function name": {
-		"prefix": "funcn",
-		"body": "function ${1:name} (${2}) {\n\t${0}\n}"
-	},
-	"function err": {
-		"prefix": "funce",
-		"body": "function (${1:err}) {\n\t${0}\n}"
-	},
-	"async ()": {
-		"prefix": "async",
-		"body": "async (${1}) => {\n\t${0}\n}"
-	},
-	"async function": {
-		"prefix": "asyncf",
-		"body": "async function (${1}) {\n\t${0}\n}"
-	},
-	"() immediately-invoked": {
-		"prefix": "funci",
-		"body": "((${2:arg}) => {\n\t${0}\n})(${1:arg})"
-	},
-	// console
-	"console.log": {
-		"prefix": "consl",
-		"body": "console.log(${0})"
-	},
-	"console.log str": {
-		"prefix": "consl",
-		"body": "console.log('${0:str}')"
-	},
-	"console.error": {
-		"prefix": "conse",
-		"body": "console.error(${0})"
-	},
-	"console.warn": {
-		"prefix": "consw",
-		"body": "console.log(${0})"
-	},
-	"console.dir": {
-		"prefix": "consd",
-		"body": "console.log(${0})"
-	},
-	"if": {
-		"prefix": "if",
-		"body": "if (${1}) {\n\t${0}\n}"
-	},
-	"if else": {
-		"prefix": "ife",
-		"body": "if (${1}) {\n\t${2}\n} else {\n\t${0}\n}"
-	},
-	"if elseif else": {
-		"prefix": "ifefe",
-		"body": "if (${1}) {\n\t${2}\n} else if (${3}) {\n\t${4}\n} else {\n\t${0}\n}"
-	},
-	"else if": {
-		"prefix": "ef",
-		"body": " else if (${1}) {\n\t${0}\n}"
-	},
-	"else": {
-		"prefix": "else",
-		"body": " else {\n\t${0}\n}"
-	},
-	"for i": {
-		"prefix": "fori",
-		"body": "for (let i = 0; i < ${1:arr}.length; i++) {\n\t${0}\n}"
-	},
-	"for j": {
-		"prefix": "forj",
-		"body": "for (let j = 0; j < ${1:arr}.length; j++) {\n\t${0}\n}"
-	},
-	"while": {
-		"prefix": "while",
-		"body": "while (${1}) {\n\t${0}\n}"
-	},
-	"switch": {
-		"prefix": "switch",
-		"body": "switch (${1}) {\n\tcase ${2:case1}:\n\t\t${3}\n\t\tbreak\n\tcase ${4:case2}:\n\t\t${5}\n\t\tbreak\n\tdefault:\n\t\t${0}\n\t\tbreak\n}"
-	},
-	"typeof": {
-		"prefix": "typeof",
-		"body": "typeof ${1:source} === '${0}'"
-	},
-	"instanceof": {
-		"prefix": "instanceof",
-		"body": "instanceof ${0}"
-	},
-	// try catch throw
-	"try catch": {
-		"prefix": "try",
-		"body": "try {\n\t${1}\n} catch (err) {\n\t${0}\n}"
-	},
-	"try catch2": {
-		"prefix": "tryc",
-		"body": "try {\n\t${1}\n} catch (err) {\n\t${0}\n}"
-	},
-	"try catch finally": {
-		"prefix": "trycf",
-		"body": "try {\n\t${1}\n} catch (err) {\n\t${2}\n} finally {\n\t${0}\n}"
-	},
-	"try finally": {
-		"prefix": "tryf",
-		"body": "try {\n\t${1}\n} finally {\n\t${0}\n}"
-	},
-	"throw": {
-		"prefix": "throw",
-		"body": "throw new Error('${0}')"
-	},
-	"throw special": {
-		"prefix": "throws",
-		"body": "throw new ${1:Error('${0}')}"
-	},
-	// Array
-	"forEach": {
-		"prefix": "forEach",
-		"body": "forEach(($1) => {\n\t${0}\n})"
-	},
-	"map": {
-		"prefix": "map",
-		"body": "map(($1) => {\n\t${0}\n})"
-	},
-	"reduce": {
-		"prefix": "reduce",
-		"body": "reduce(($1) => {\n\t${0}\n})"
-	},
-	"filter": {
-		"prefix": "filter",
-		"body": "filter(($1) => {\n\t${0}\n})"
-	},
-	"find": {
-		"prefix": "find",
-		"body": "find(($1) => {\n\t${0}\n})"
-	},
-	"every": {
-		"prefix": "every",
-		"body": "every(($1) => {\n\t${0}\n})"
-	},
-	"some": {
-		"prefix": "some",
-		"body": "some(($1) => {\n\t${0}\n})"
-	},
-	"Array.isArray()": {
-		"prefix": "Array.isArray()",
-		"body": "Array.isArray(${0})"
-	},
-	// JSON
-	"JSON.stringify": {
-		"prefix": "JSON.stringify",
-		"body": "JSON.stringify($0)"
-	},
-	"JSON.parse": {
-		"prefix": "JSON.parse",
-		"body": "JSON.parse($0)"
-	},
-	// Obejct
-	"Object.assign": {
-		"prefix": "Object.assign",
-		"body": "Object.assign(${0})"
-	},
-	"Object.create": {
-		"prefix": "Object.create",
-		"body": "Object.create(${0})"
-	},
-	"Object.keys": {
-		"prefix": "Object.keys",
-		"body": "Object.keys(${0})"
-	},
-	"Object.getPrototypeOf": {
-		"prefix": "Object.getPrototypeOf",
-		"body": "Object.getPrototypeOf(${0})"
-	},
-	"Object.setPrototypeOf": {
-		"prefix": "Object.setPrototypeOf",
-		"body": "Object.setPrototypeOf(${1}, ${0})"
-	},
-	// String
-	// events
-	"on": {
-		"prefix": "on",
-		"body": "on('${1:event}', (${2}) => {\n\t${0}\n})"
-	},
-	"once": {
-		"prefix": "once",
-		"body": "once('${1:event}', (${2}) => {\n\t${0}\n})"
-	},
-	"emit": {
-		"prefix": "emit",
-		"body": "emit('${0:event}')"
-	},
-	"addListener": {
-		"prefix": "addListener",
-		"body": "addListener('${1:event}', (${2}) => {\n\t${0}\n})"
-	},
-	"removeListener": {
-		"prefix": "removeListener",
-		"body": "removeListener('${1:event}', ${0})"
-	},
-	// module require
-	"require": {
-		"prefix": "require",
-		"body": "require('${0}')"
-	},
-	"module.exports obj": {
-		"prefix": "module.exports",
-		"body": "module.exports = {\n\t${0}\n}"
-	},
-	"module.exports attr": {
-		"prefix": "module.exports",
-		"body": "module.exports.${1:name} = ${0}"
-	},
-	"module.exports class": {
-		"prefix": "module.exports",
-		"body": "module.exports = class ${1:name} {\n\tconstructor (${2:arg}) {\n\t\t${0}\n\t}\n}"
-	},
-	// class
-	"class": {
-		"prefix": "class",
-		"body": "class ${1:name} {\n\tconstructor (${2:arg}) {\n\t\t${0}\n\t}\n}"
-	},
-	"class extends": {
-		"prefix": "class",
-		"body": "class ${1:name} extends ${2:super} {\n\tconstructor (${3:arg}) {\n\t\tsuper(${4:arg})\n\t\t${0}\n\t}\n}"
-	},
-	"getter": {
-		"prefix": "get",
-		"body": "get ${1:property} () {\n\t${0}\n}"
-	},
-	"setter": {
-		"prefix": "set",
-		"body": "set ${1:property} (${2:val}) {\n\t${0}\n}"
-	},
-	"method": {
-		"prefix": "method",
-		"body": "${1:method} (${2:arg}) {\n\t${0}\n}"
-	},
-	"static method": {
-		"prefix": "static",
-		"body": "static ${1:method} (${2:arg}) {\n\t${0}\n}"
-	},
-	// Promise
-	"new Promise": {
-		"prefix": "new Promise",
-		"body": "new Promise((resolve, reject) => {\n\t${0}\n})"
-	},
-	"Promise.all": {
-		"prefix": "Promise.all",
-		"body": "Promise.all(${0})"
-	},
-	"Promise.all arr": {
-		"prefix": "Promise.all",
-		"body": "Promise.all([\n\t${0}\n])"
-	},
-	"Promise.resolve": {
-		"prefix": "Promise.resolve",
-		"body": "Promise.resolve(${0})"
-	},
-	"Promise.resolve func": {
-		"prefix": "Promise.resolve",
-		"body": "Promise.resolve((${1}) => {\n\t${0}\n})"
-	},
-	"Promise.reject": {
-		"prefix": "Promise.reject",
-		"body": "Promise.reject(${0})"
-	},
-	"Promise.reject func": {
-		"prefix": "Promise.reject",
-		"body": "Promise.reject((${1}) => {\n\t${0}\n})"
-	},
-	"then": {
-		"prefix": "then",
-		"body": "then(${0})"
-	},
-	"then func": {
-		"prefix": "thenf",
-		"body": "then((${1}) => {\n\t${0}\n})"
-	},
-	"catch": {
-		"prefix": "catch",
-		"body": "catch(${0})"
-	},
-	"catch func": {
-		"prefix": "catchf",
-		"body": "catch((${1}) => {\n\t${0}\n})"
-	},
-	// timer
-	"setTimeout": {
-		"prefix": "setTimeout",
-		"body": "setTimeout(() => {\n\t${0}\n}, ${1:delay})"
-	},
-	"settimeout": {
-		"prefix": "settimeout",
-		"body": "setTimeout(() => {\n\t${0}\n}, ${1:delay})"
-	},
-	"setInterval": {
-		"prefix": "setInterval",
-		"body": "setInterval(() => {\n\t${0}\n}, ${1:delay})"
-	},
-	"setinterval": {
-		"prefix": "setinterval",
-		"body": "setInterval(() => {\n\t${0}\n}, ${1:delay})"
-	},
-	"setImmediate": {
-		"prefix": "setImmediate",
-		"body": "setImmediate(() => {\n\t${0}\n})"
-	},
-	"setimmediate": {
-		"prefix": "setimmediate",
-		"body": "setImmediate(() => {\n\t${0}\n})"
-	},
-	"test": {
-		"prefix": "test",
-		"body": "test('${1}', (t) => {\n\t${0}\n})"
-	}
+  "use strict": {
+    "prefix": "use",
+    "body": [
+      "/**",
+      " * xiedacon created at ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+      " *",
+      " * Copyright (c) ${CURRENT_YEAR} xiedacon, all rights reserved.",
+      " */",
+      ""
+    ]
+  },
+  "let": {
+    "prefix": "let",
+    "body": "let ${1} = ${0}"
+  },
+  "let undefined": {
+    "prefix": "letu",
+    "body": "let ${0}"
+  },
+  "const": {
+    "prefix": "const",
+    "body": "const ${1} = ${0}"
+  },
+  "const require": {
+    "prefix": "constr",
+    "body": "const ${0} = require('$1')"
+  },
+  "import": {
+    "prefix": "import",
+    "body": "import $0 from '$1'"
+  },
+  "import {}": {
+    "prefix": "import {}",
+    "body": "import { $0 } from '$1'"
+  },
+  "export default obj": {
+    "prefix": "export default obj",
+    "body": "export default {\n\t$0\n}"
+  },
+  "export default class": {
+    "prefix": "export default",
+    "body": "export default class $1 {\n\t$0\n}"
+  },
+  "var": {
+    "prefix": "var",
+    "body": "var ${1} = ${0}"
+  },
+  "var undefined": {
+    "prefix": "varu",
+    "body": "var ${0}"
+  },
+  // function
+  "()": {
+    "prefix": "func",
+    "body": "(${1}) => {\n\t${0}\n}"
+  },
+  "(err)": {
+    "prefix": "funce",
+    "body": "(${1:err}) => {\n\t${0}\n}"
+  },
+  "function": {
+    "prefix": "funct",
+    "body": "function (${1}) {\n\t${0}\n}"
+  },
+  "function name": {
+    "prefix": "funcn",
+    "body": "function ${1:name} (${2}) {\n\t${0}\n}"
+  },
+  "function err": {
+    "prefix": "funce",
+    "body": "function (${1:err}) {\n\t${0}\n}"
+  },
+  "async ()": {
+    "prefix": "async",
+    "body": "async (${1}) => {\n\t${0}\n}"
+  },
+  "async function": {
+    "prefix": "asyncf",
+    "body": "async function (${1}) {\n\t${0}\n}"
+  },
+  "() immediately-invoked": {
+    "prefix": "funci",
+    "body": "((${2:arg}) => {\n\t${0}\n})(${1:arg})"
+  },
+  // console
+  "console.log": {
+    "prefix": "consl",
+    "body": "console.log(${0})"
+  },
+  "console.log str": {
+    "prefix": "consl",
+    "body": "console.log('${0:str}')"
+  },
+  "console.error": {
+    "prefix": "conse",
+    "body": "console.error(${0})"
+  },
+  "console.warn": {
+    "prefix": "consw",
+    "body": "console.log(${0})"
+  },
+  "console.dir": {
+    "prefix": "consd",
+    "body": "console.log(${0})"
+  },
+  "if": {
+    "prefix": "if",
+    "body": "if (${1}) {\n\t${0}\n}"
+  },
+  "if else": {
+    "prefix": "ife",
+    "body": "if (${1}) {\n\t${2}\n} else {\n\t${0}\n}"
+  },
+  "if elseif else": {
+    "prefix": "ifefe",
+    "body": "if (${1}) {\n\t${2}\n} else if (${3}) {\n\t${4}\n} else {\n\t${0}\n}"
+  },
+  "else if": {
+    "prefix": "ef",
+    "body": " else if (${1}) {\n\t${0}\n}"
+  },
+  "else": {
+    "prefix": "else",
+    "body": " else {\n\t${0}\n}"
+  },
+  "for i": {
+    "prefix": "fori",
+    "body": "for (let i = 0; i < ${1:arr}.length; i++) {\n\t${0}\n}"
+  },
+  "for j": {
+    "prefix": "forj",
+    "body": "for (let j = 0; j < ${1:arr}.length; j++) {\n\t${0}\n}"
+  },
+  "while": {
+    "prefix": "while",
+    "body": "while (${1}) {\n\t${0}\n}"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": "switch (${1}) {\n\tcase ${2:case1}:\n\t\t${3}\n\t\tbreak\n\tcase ${4:case2}:\n\t\t${5}\n\t\tbreak\n\tdefault:\n\t\t${0}\n\t\tbreak\n}"
+  },
+  "typeof": {
+    "prefix": "typeof",
+    "body": "typeof ${1:source} === '${0}'"
+  },
+  "instanceof": {
+    "prefix": "instanceof",
+    "body": "instanceof ${0}"
+  },
+  // try catch throw
+  "try catch": {
+    "prefix": "try",
+    "body": "try {\n\t${1}\n} catch (err) {\n\t${0}\n}"
+  },
+  "try catch2": {
+    "prefix": "tryc",
+    "body": "try {\n\t${1}\n} catch (err) {\n\t${0}\n}"
+  },
+  "try catch finally": {
+    "prefix": "trycf",
+    "body": "try {\n\t${1}\n} catch (err) {\n\t${2}\n} finally {\n\t${0}\n}"
+  },
+  "try finally": {
+    "prefix": "tryf",
+    "body": "try {\n\t${1}\n} finally {\n\t${0}\n}"
+  },
+  "throw": {
+    "prefix": "throw",
+    "body": "throw new Error('${0}')"
+  },
+  "throw special": {
+    "prefix": "throws",
+    "body": "throw new ${1:Error('${0}')}"
+  },
+  // Array
+  "forEach": {
+    "prefix": "forEach",
+    "body": "forEach(($1) => {\n\t${0}\n})"
+  },
+  "map": {
+    "prefix": "map",
+    "body": "map(($1) => {\n\t${0}\n})"
+  },
+  "reduce": {
+    "prefix": "reduce",
+    "body": "reduce(($1) => {\n\t${0}\n})"
+  },
+  "filter": {
+    "prefix": "filter",
+    "body": "filter(($1) => {\n\t${0}\n})"
+  },
+  "find": {
+    "prefix": "find",
+    "body": "find(($1) => {\n\t${0}\n})"
+  },
+  "every": {
+    "prefix": "every",
+    "body": "every(($1) => {\n\t${0}\n})"
+  },
+  "some": {
+    "prefix": "some",
+    "body": "some(($1) => {\n\t${0}\n})"
+  },
+  "Array.isArray()": {
+    "prefix": "Array.isArray()",
+    "body": "Array.isArray(${0})"
+  },
+  // JSON
+  "JSON.stringify": {
+    "prefix": "JSON.stringify",
+    "body": "JSON.stringify($0)"
+  },
+  "JSON.parse": {
+    "prefix": "JSON.parse",
+    "body": "JSON.parse($0)"
+  },
+  // Obejct
+  "Object.assign": {
+    "prefix": "Object.assign",
+    "body": "Object.assign(${0})"
+  },
+  "Object.create": {
+    "prefix": "Object.create",
+    "body": "Object.create(${0})"
+  },
+  "Object.keys": {
+    "prefix": "Object.keys",
+    "body": "Object.keys(${0})"
+  },
+  "Object.getPrototypeOf": {
+    "prefix": "Object.getPrototypeOf",
+    "body": "Object.getPrototypeOf(${0})"
+  },
+  "Object.setPrototypeOf": {
+    "prefix": "Object.setPrototypeOf",
+    "body": "Object.setPrototypeOf(${1}, ${0})"
+  },
+  // String
+  // events
+  "on": {
+    "prefix": "on",
+    "body": "on('${1:event}', (${2}) => {\n\t${0}\n})"
+  },
+  "once": {
+    "prefix": "once",
+    "body": "once('${1:event}', (${2}) => {\n\t${0}\n})"
+  },
+  "emit": {
+    "prefix": "emit",
+    "body": "emit('${0:event}')"
+  },
+  "addListener": {
+    "prefix": "addListener",
+    "body": "addListener('${1:event}', (${2}) => {\n\t${0}\n})"
+  },
+  "removeListener": {
+    "prefix": "removeListener",
+    "body": "removeListener('${1:event}', ${0})"
+  },
+  // module require
+  "require": {
+    "prefix": "require",
+    "body": "require('${0}')"
+  },
+  "module.exports obj": {
+    "prefix": "module.exports",
+    "body": "module.exports = {\n\t${0}\n}"
+  },
+  "module.exports attr": {
+    "prefix": "module.exports",
+    "body": "module.exports.${1:name} = ${0}"
+  },
+  "module.exports class": {
+    "prefix": "module.exports",
+    "body": "module.exports = class ${1:name} {\n\tconstructor (${2:arg}) {\n\t\t${0}\n\t}\n}"
+  },
+  // class
+  "class": {
+    "prefix": "class",
+    "body": "class ${1:name} {\n\tconstructor (${2:arg}) {\n\t\t${0}\n\t}\n}"
+  },
+  "class extends": {
+    "prefix": "class",
+    "body": "class ${1:name} extends ${2:super} {\n\tconstructor (${3:arg}) {\n\t\tsuper(${4:arg})\n\t\t${0}\n\t}\n}"
+  },
+  "getter": {
+    "prefix": "get",
+    "body": "get ${1:property} () {\n\t${0}\n}"
+  },
+  "setter": {
+    "prefix": "set",
+    "body": "set ${1:property} (${2:val}) {\n\t${0}\n}"
+  },
+  "method": {
+    "prefix": "method",
+    "body": "${1:method} (${2:arg}) {\n\t${0}\n}"
+  },
+  "static method": {
+    "prefix": "static",
+    "body": "static ${1:method} (${2:arg}) {\n\t${0}\n}"
+  },
+  // Promise
+  "new Promise": {
+    "prefix": "new Promise",
+    "body": "new Promise((resolve, reject) => {\n\t${0}\n})"
+  },
+  "Promise.all": {
+    "prefix": "Promise.all",
+    "body": "Promise.all(${0})"
+  },
+  "Promise.all arr": {
+    "prefix": "Promise.all",
+    "body": "Promise.all([\n\t${0}\n])"
+  },
+  "Promise.resolve": {
+    "prefix": "Promise.resolve",
+    "body": "Promise.resolve(${0})"
+  },
+  "Promise.resolve func": {
+    "prefix": "Promise.resolve",
+    "body": "Promise.resolve((${1}) => {\n\t${0}\n})"
+  },
+  "Promise.reject": {
+    "prefix": "Promise.reject",
+    "body": "Promise.reject(${0})"
+  },
+  "Promise.reject func": {
+    "prefix": "Promise.reject",
+    "body": "Promise.reject((${1}) => {\n\t${0}\n})"
+  },
+  "then": {
+    "prefix": "then",
+    "body": "then(${0})"
+  },
+  "then func": {
+    "prefix": "thenf",
+    "body": "then((${1}) => {\n\t${0}\n})"
+  },
+  "catch": {
+    "prefix": "catch",
+    "body": "catch(${0})"
+  },
+  "catch func": {
+    "prefix": "catchf",
+    "body": "catch((${1}) => {\n\t${0}\n})"
+  },
+  // timer
+  "setTimeout": {
+    "prefix": "setTimeout",
+    "body": "setTimeout(() => {\n\t${0}\n}, ${1:delay})"
+  },
+  "settimeout": {
+    "prefix": "settimeout",
+    "body": "setTimeout(() => {\n\t${0}\n}, ${1:delay})"
+  },
+  "setInterval": {
+    "prefix": "setInterval",
+    "body": "setInterval(() => {\n\t${0}\n}, ${1:delay})"
+  },
+  "setinterval": {
+    "prefix": "setinterval",
+    "body": "setInterval(() => {\n\t${0}\n}, ${1:delay})"
+  },
+  "setImmediate": {
+    "prefix": "setImmediate",
+    "body": "setImmediate(() => {\n\t${0}\n})"
+  },
+  "setimmediate": {
+    "prefix": "setimmediate",
+    "body": "setImmediate(() => {\n\t${0}\n})"
+  },
+  "test": {
+    "prefix": "test",
+    "body": "test('${1}', (t) => {\n\t${0}\n})"
+  }
 }

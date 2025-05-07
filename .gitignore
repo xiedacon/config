@@ -69,6 +69,7 @@ fishd.*
 
 workspaceStorage
 globalStorage
+History
 .ssh
 
 settings/~/.local
